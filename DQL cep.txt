@@ -15,7 +15,7 @@
 
 
 
- select l.nome as "Logradouro", b.nome as "Bairro", concat (c.nome, '/' e.sigla) as 'Cidade/UF', l.cep as "CEP",
+ select l.nome as "Logradouro", b.nome as "Bairro", concat (c.nome, '/' e.sigla) as "Cidade/UF", l.cep as "CEP",
         l.complemento as "Complemento" from estados as e
         left join cidades as c on c.estado_sigla=e.sigla
         left join bairros as b on b.cidade_id = c.id

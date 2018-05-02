@@ -34,15 +34,15 @@ BAIRROS
 
 insert into bairros(nome, cidade_id) values ('centro','1');
 
-insert into bairros(nome, cidade_id) values ('centro','2');
+insert into bairros(nome, cidade_id) values ('RuaA','2');
 
-insert into bairros(nome, cidade_id) values ('centro','3');
+insert into bairros(nome, cidade_id) values ('RuaB','3');
 
-insert into bairros(nome, cidade_id) values ('centro','4');
+insert into bairros(nome, cidade_id) values ('RuaC','4');
 
-insert into bairros(nome, cidade_id) values ('centro','5');
+insert into bairros(nome, cidade_id) values ('RuaD','5');
 
-insert into bairros(nome, cidade_id) values ('centro','6');
+insert into bairros(nome, cidade_id) values ('RuaE','6');
 
 LOGRADOUROS
 

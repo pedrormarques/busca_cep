@@ -1,0 +1,60 @@
+//Comandos DML
+
+ESTADOS
+
+insert into estados(sigla, nome) values ('BA','Bahia');
+
+insert into estados(sigla, nome) values ('SP','Sao_Paulo');
+
+insert into estados(sigla, nome) values ('PI','Piaui');
+
+insert into estados(sigla, nome) values ('RJ','Rio_de_Janeiro');
+
+insert into estados(sigla, nome) values ('MG','Minas_Gerais');
+
+insert into estados(sigla, nome) values ('MT','Mato Grosso');
+
+
+CIDADES
+
+insert into cidades(nome, estado_sigla) values ('Jequie','BA');
+
+insert into cidades(nome, estado_sigla) values ('Campinas','SP');
+
+insert into cidades(nome, estado_sigla) values ('Floriano','PI');
+
+insert into cidades(nome, estado_sigla) values ('Copacabana','RJ');
+
+insert into cidades(nome, estado_sigla) values ('Varginha','MG');
+
+insert into cidades(nome, estado_sigla) values ('Sorriso','MT');
+
+
+BAIRROS
+
+insert into bairros(nome, cidade_id) values ('centro','1');
+
+insert into bairros(nome, cidade_id) values ('centro','2');
+
+insert into bairros(nome, cidade_id) values ('centro','3');
+
+insert into bairros(nome, cidade_id) values ('centro','4');
+
+insert into bairros(nome, cidade_id) values ('centro','5');
+
+insert into bairros(nome, cidade_id) values ('centro','6');
+
+LOGRADOUROS
+
+insert into logradouros(nome, cep, complemento, bairro_id) values ('Rua da Independencia','10100-000','prox. a praca central', '1');
+
+insert into logradouros(nome, cep, complemento, bairro_id) values ('Rua da Patria','20100-000','prox. a igreja matriz', '3');
+
+insert into logradouros(nome, cep, complemento, bairro_id) values ('Rua da liberdade','30100-000','prox. a padaria central', '4');
+
+insert into logradouros(nome, cep, complemento, bairro_id) values ('Rua da Vitoria','40100-000','prox. a delegacia municipal', '5');
+
+insert into logradouros(nome, cep, complemento, bairro_id) values ('Rua F','50100-000','', '6');
+
+
+

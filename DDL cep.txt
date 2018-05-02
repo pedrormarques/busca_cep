@@ -1,0 +1,19 @@
+
+////comandos DDL
+
+
+create database cep_db;
+
+use cep_db;
+
+create table estados(sigla varchar(2) primary key not null, nome varchar(255) not null unique) engine=InnoDB default charset=utf8;
+
+create table cidades(id bigint not null primary key auto_increment, nome varchar(255) not null unique, estado_sigla varchar(2) not null)Engine=InnoDB default charset=utf8;
+alter table cidades add constraint fk_estado_sigla foreign key(estado_sigla) references estados(sigla);
+
+create table bairros(id bigint not null primary key auto_increment, nome varchar(255) unique, cidade_id bigint not null)Engine=InnoDB default charset=utf8;
+alter table bairros add constraint fk_cidade_id foreign key(cidade_id) references cidades(id);
+
+create table logradouros(id bigint not null primary key auto_increment, nome varchar(255) not null, cep varchar(11) not null unique, complemento varchar(255) not null, bairro_id bigint not null)Engine=InnoDB default charset=utf8;
+alter table logradouros add constraint fk_bairro_id foreign key(bairro_id) references bairros(id);
+alter table logradouros drop index nome;
